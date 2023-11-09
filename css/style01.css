@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(to right, red, black 80%);
+}
+.knobki{
+    background: linear-gradient(to right, yellow, black 80%);
+    height: 60px;
+    margin-top: 1px;
+}
+.knobki button {
+    width: 150px;
+    height: 40px;
+    background-color: white; 
+    color: red; 
+    border: none; 
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+}
+button[name="nasvel"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 40px;
+}
+button[name="podderska"] {
+    width: 200px;
+}
+.text{
+    color: aliceblue;
+}
+.ikonki{
+    margin-right: 5px;
+}

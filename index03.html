@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Команды</title>
+        <link rel="stylesheet" type="text/css" href="css/style02.css">
+    </head>
+    <body>
+        <div class="knobki">
+            <p>
+            <button type="button" name="nasvel" onclick="window.location.href='index.html'"><img class="myImage"  src="images/fvftfr.png">Ruby</button>
+            <button type="button" name="doc" onclick="window.location.href='index02.html'"><img class="myImage" src="images/1875103.png">Документация</button>
+            <button type="button" name="command"><img class="myImage" src="images/koman.png">Команды</button>
+            <button type="button" name="podderska" onclick="window.location.href='index04.html'"><img class="myImage" src="images/heart.png">Поддержите нас</button>
+            </p>
+        </div>
+        <div class="komands">
+            <p><button id="addmoney" type="button">addmoney-Добавить пользователю валюту</button></p>
+            <p><button id="anime" type="button">anime-Получить информацию об аниме</button></p>
+            <p><button id="avatar" type="button">avatar-Показать аватар пользователя</button></p>
+            <p><button id="balance" type="button">balance-Показать баланс</button></p>
+            <p><button id="clear" type="button">clear-Удалить сообщение</button></p>
+            <p><button id="createrol" type="button">createrole-Создать роль</button></p>
+            <p><button id="interaction" type="button">interaction-Взаимодействоть с пользователем</button></p>
+            <p><button id="jokes" type="button">jokes-Отправить анектод</button></p>
+            <p><button id="ping" type="button">ping-Проверить пинг бота</button></p>
+            <p><button id="profile" type="button">profile-Показать профиль пользователя</button></p>
+            <p><button id="rolebuy" type="button">rolebuy-Показать список ролей</button></p>
+            <p><button id="searchforplayes" type="button">searchforplayes-Поиск игроков</button></p>
+            <p><button id="top" type="button">top-Показать топ пользователей</button></p>
+            <p><button id="transfer" type="button">transfer-Перевести валюту</button></p>
+            <p><button id="work" type="button">work-Работать</button>
+        </div>
+        <div id="myModal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "addmoney"</h2>
+                <p>Добавляет пользователю указанное количество валюты</p>
+                <h2>Использование:</h2>
+                <p>/addmoney (user) (amount) (reason)</p>
+                <p>user - имя пользователя</p>
+                <p>amount - количество валюты</p>
+                <p>reason(необязателтный параметр) - причина поощрения</p>
+                <h2>Примечание:</h2>
+                <p>Этой командой может пользоваться только хозяин сервера</p>
+            </div>
+        </div>
+
+        <div id="myModal2" class="modal" onclick="closeModal2(event)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <h2>Команда "anime"</h2>
+                    <p>Выдаёт информацию он аниме с сайта <a href="https://myanimelist.net/">myanimelist.net</a></p>
+                    <h2>Использование:</h2>
+                    <p>/anime (name)</p>
+                    <p>name - название аниме</p>
+                </div>
+        </div>
+        <div id="myModal3" class="modal" onclick="closeModal3(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "avatar"</h2>
+                <p>Показывает аватар участника</p>
+                <h2>Использование:</h2>
+                <p>/avatar (target[name])</p>
+                <p>target - имя участника чей аватар хотите увидеть</p>
+             </div>
+        </div>
+        <div id="myModal4" class="modal" onclick="closeModal4(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "balance"</h2>
+                <p>Показывает ваш баланс или баланс другого пользователя</p>
+                <h2>Использование:</h2>
+                <p>/balance (user)</p>
+                <p>user - имя пользователя чей баланс вы хотите увидеть (опустите этот параметр, если хотите увидеть свой баланс)</p>
+            </div>
+        </div>
+        <div id="myModal15" class="modal" onclick="closeModal15(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "clear"</h2>
+                <p>Удаляет указанное количество сообщений</p>
+                <h2>Использование:</h2>
+                <p>/clear (count)</p>
+                <p>count - количество сообщений, которые вы хотите удалить</p>
+                <h2>Примечание:</h2>
+                <p>Этой командой может пользоваться только админестраторы сервера</p>
+            </div>
+        </div>
+        <div id="myModal5" class="modal" onclick="closeModal5(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "createrole"</h2>
+                <p>Сщздаёт своб роль за валюту</p>
+                <h2>Использование:</h2>
+                <p>/createrole (name) (color) (roleprice)</p>
+                <p>name - название своей роли</p>
+                <p>color - цвет отображения роли</p>
+                <p>roleprice - цена, за которую можно купить роль</p>
+
+             </div>
+        </div>
+        <div id="myModal6" class="modal" onclick="closeModal6(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "interaction"</h2>
+                <p>Взаимодействует с пользователем через гифку</p>
+                <h2>Использование:</h2>
+                <p>/interaction (user) (reaction)</p>
+                <p>user - имя пользователя кому вы хотите отпрвить гифку</p>
+                <p>reaction - какого типа гифку вы хотите отпрвить (ударить, пожать руку, Обнять, приветсвовать)</p>
+            </div>
+        </div>
+        <div id="myModal7" class="modal" onclick="closeModal7(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "jokes"</h2>
+                <p>Отправляет анекдот</p>
+                <h2>Использование:</h2>
+                <p>/jokes</p>
+            </div>
+        </div>
+        <div id="myModal8" class="modal" onclick="closeModal8(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "ping"</h2>
+                <p>Проверяет пинг бота</p>
+                <h2>Использование:</h2>
+                <p>/ping</p>
+            </div>
+        </div>
+        <div id="myModal9" class="modal" onclick="closeModal9(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "profile"</h2>
+                <p>Показывает профиль пользователя</p>
+                <h2>Использование:</h2>
+                <p>/profile (user)</p>
+                <p>user - имя пользователя чей профиль вы хотите увидеть (опустите этот параметр, если хотите увидеть свой профиль)</p>
+            </div>
+        </div>
+        <div id="myModal10" class="modal" onclick="closeModal10(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "rolebuy"</h2>
+                <p>Показывает список ролей, которые можно купить на данном сервере</p>
+                <h2>Использование:</h2>
+                <p>/rolebuy</p>
+            </div>
+        </div>
+        <div id="myModal11" class="modal" onclick="closeModal11(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "searchforplayes"</h2>
+                <p>Помогает найти игроков для совместной игры</p>
+                <h2>Использование:</h2>
+                <p>/searchforplayes (рaнг) (позиция) (хост) (команда)</p>
+            </div>
+        </div>
+        <div id="myModal12" class="modal" onclick="closeModal12(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "top"</h2>
+                <p>Показывает топ пользователей по активности</p>
+                <h2>Использование:</h2>
+                <p>/top (category)</p>
+                <p>category - выбрать категорию топа (Голосовой канал, сообщение, опыт)</p>
+            </div>
+        </div>
+        <div id="myModal13" class="modal" onclick="closeModal13(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "transfer"</h2>
+                <p>Переволить указанное количество валюты пользователю из своего кармана</p>
+                <h2>Использование:</h2>
+                <p>/transfer (target) (amount)</p>
+                <p>target - имя пользователся кому вы хотите перевести</p>
+                <p>amount - количество валюты</p>
+             </div>
+        </div>
+        <div id="myModal14" class="modal" onclick="closeModal14(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Команда "work"</h2>
+                <p>Запускает ежедневную работу за которую вы получите валюту</p>
+                <h2>Использование:</h2>
+                <p>/work</p>
+                </div>
+        </div>
+        <script src='script/script.js'></script> 
+    </body>
+</html> 

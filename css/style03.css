@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(to right, red, black 80%);
+}
+.knobki{
+    background: linear-gradient(to right, yellow, black 80%);
+    height: 60px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+.knobki button {
+    width: 150px;
+    height: 40px;
+    background-color: white; 
+    color: red; 
+    border: none; 
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+}
+button[name="nasvel"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 40px;
+}
+button[name="podderska"] {
+    width: 200px;
+}
+.podd{
+    color: aliceblue;
+}
+.oplata{
+    width: 50%;
+    height: 500px;
+    background-color: aliceblue;
+    color: blue;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 20%;
+    margin-right: 30%;
+    border-radius: 12px;
+}
+.oplata h3{
+    font-size: 2rem
+}
+.oplata button{
+    background-color: yellow;
+    color: red;
+font-size: 20px;
+    width: 50%;
+    height: 20%;
+    margin-top: 10%;
+    text-align: center;
+    border: none;  
+    border-radius: 12px;
+    cursor: pointer; 
+}
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+#youman {
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+#youman div {
+    display: flex;
+    align-items: center;
+}
+
+#youman img {
+    margin-right: 10px;
+}
+#youman:hover{
+    background-color: gray;
+    color: #fefefe;
+}
+
+
