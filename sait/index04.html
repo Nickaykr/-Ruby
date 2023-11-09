@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Поддержка</title>
+       <link rel="stylesheet" type="text/css" href="css/style03.css">
+
+    </head>
+    <body>
+        <div class="knobki">
+            <p>
+            <button type="button" name="nasvel" onclick="window.location.href='index.html'"><img class="myImage"  src="images/fvftfr.png">Ruby</button>
+            <button type="button" name="doc" onclick="window.location.href='index02.html'"><img class="myImage" src="images/1875103.png">Документация</button>
+            <button type="button" name="command" onclick="window.location.href='index03.html'"><img class="myImage" src="images/koman.png">Команды</button>
+            <button type="button" name="podderska"><img class="myImage" src="images/heart.png">Поддержите нас</button>
+            </p>
+        </div>
+        <div class="podd">
+            <h1>Поддержите Ruby!!!</h1>
+            <h3>Мы вкладываем много любви и усилий в разработку Ruby и для хорошей и стабильной работы нам нужна Ваша помощь! Мы будем очень признательны за любые пожертвования в нашу поддержку.</h3>
+        </div>
+        <div class="oplata">
+            <h3>Сколько не жалко</h3>
+            <p><img src="images/smile.png"></p>
+            <button type="button" id="podder">Поддержать</button>
+        </div>
+        <div id="myModal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h1>Платёжная система</h1>
+                <p>Выберите предпочтительную платежную систему. Изучите описание каждой для выбора подходящей именно Вам:</p>
+                <button type="button" id="youman">
+                    <div>
+                        <img class="ima" src="images/youman.png"><span>ЮMoney</span>
+                    </div>
+                    <p>Поддерживаются только карты, выпущенные в России. Предпочтительно для резидентов РФ.</p>
+                </button>
+                    <button type="button" id="youman">
+                        <div>
+                            <img class="ima" src="images/qivi.png"><span>QIWI</span>
+                        </div>
+                        <p>Поддерживаются карты из других стран. Регистрация и наличие QIWI Кошелька НЕ ТРЕБУЕТСЯ, можно оплатить любой картой другого банка.</p>
+                    </button>
+            </div>
+        </div>
+        <script src='script/script3.js'></script> 
+    </body>
+</html>
