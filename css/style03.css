@@ -93,6 +93,28 @@ font-size: 20px;
 #youman img {
     margin-right: 10px;
 }
+#qivi {
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+#qivi div {
+    display: flex;
+    align-items: center;
+}
+
+#qivi img {
+    margin-right: 10px;
+}
+#qivi:hover{
+    background-color: gray;
+    color: #fefefe;
+}
 #youman:hover{
     background-color: gray;
     color: #fefefe;
